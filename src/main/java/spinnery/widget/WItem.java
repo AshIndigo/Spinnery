@@ -5,11 +5,18 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import spinnery.client.render.BaseRenderer;
 
+/**
+ * Draws a given item stack set via {@link WItem#setStack(ItemStack)} to the specified position. The specified size is ignored when drawing the item.
+ */
 public class WItem extends WAbstractWidget {
 	private static final int Z_ITEM_OFFSET = 3;
 
 	protected ItemStack stack = ItemStack.EMPTY;
 
+	/**
+	 * Gets the stack that this widget will draw
+	 * @return The {@link ItemStack} to draw
+	 */
 	public ItemStack getStack() {
 		return stack;
 	}

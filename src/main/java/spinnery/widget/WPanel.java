@@ -16,10 +16,12 @@ import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * A base panel to put widgets onto to act as a backdrop and container for all added widgets
+ */
 @Environment(EnvType.CLIENT)
 public class WPanel extends WAbstractWidget implements WModifiableCollection, WDelegatedEventListener {
 	protected Set<WAbstractWidget> widgets = new LinkedHashSet<>();
-
 
 	@Override
 	public void draw(MatrixStack matrices, VertexConsumerProvider provider) {

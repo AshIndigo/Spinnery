@@ -5,6 +5,9 @@ import net.fabricmc.api.Environment;
 import net.minecraft.util.Identifier;
 import spinnery.Spinnery;
 
+/**
+ * An image of <s>kirby</s> kibby. Frankly one of the most important widgets in this mod
+ */
 @Environment(EnvType.CLIENT)
 public final class WKibbyImage extends WStaticImage {
 	public WKibbyImage() {
